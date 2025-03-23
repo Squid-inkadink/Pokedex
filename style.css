@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: salmon;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/gameboy.png'); /* Ensure the image is in an 'images' folder in your project */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 300px; /* Adjust based on actual image size */
+    height: 650px;
+}
+
+.containerTwo {
+    position: absolute; /* Positions it relative to .container */
+    top: 55%; /* Adjust to place it over the light blue area */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers it */
+    background-color: #1c99d9; /* Match Game Boy */
+    padding: 15px;
+    border-radius: 8px;
+    width: 160px; /* Adjust size */
+    text-align: center;
+}
+
+
+#pokedex-screen {
+    position: absolute;
+    top: 22%; /* Adjust positioning based on the image */
+    left: 18%;
+    width: 60%;
+    height: 30%;
+    background-color: #a0d0a0; /* Greenish color to resemble old Game Boy screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#pokedex-entry {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+#submit-guess.hidden {
+    display: none;
+}
+
+#guess.hidden {
+    display: none;
+}
+
+.button {
+    border: center;
+    color: #000000;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
